@@ -1,0 +1,17 @@
+<h1 align=center>T3A12-Decisions-if-Gabriel.html</h1>
+
+
+<pre>
+|| means OR
+&& means AND 
+! means NOT 
+</pre>
+<input id="myText01" type=text value=3 ><br><br>
+<input type=button value-"show X" onclick="{
+    x = document.getElementById('myText01').value
+    myTemp = '............'
+    if (x >= 2){myTemp = 'Something'}
+    document.getElementById('mySpan01').innerHTML = myTemp
+
+}"><br><br>
+<span id="mySpan01">...</span>
