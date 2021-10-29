@@ -15,3 +15,28 @@ document.getElementById('mySpan01') .innerHTML = myTemp
 }"><br><br>
 
 <span id="mySpan01" >...</Span><br><br>
+
+<h4> MORE EXAMPLES</h4>
+
+Max loops: <input id='myNum01" type=number value="4" ><br>
+  
+<input type=button value="Basic For loop with Decisions" onclick="{
+    document.getElementById('myDiv01').innerHTML = ''
+    let myTemp = ''
+  
+    let myMax = parsInt(document.getElementById('myNum01').value)
+  
+    for (let myLoop = 0; myLoop < myMax; myLoop++ ){
+       if (myLoop * 2 > myMax){
+          myTemp += ' cool '
+      }
+  
+      myTemp += 'Loop number: ' + myLoop + '<br>'
+    }
+    myTemp += 'Loop number: ' + myLoop + '<br>'
+  }
+  document.getElementById('myDiv01').innerHTML = myTemp
+}">
+
+
+<div id="myDiv01">...</div>
