@@ -1,0 +1,31 @@
+Version 0.0.1
+
+<h2 align=center>t1a10-events-by-Gabe.html</h2>
+
+<a href="https://way2tutorial.com/html/htm15_events_handler_list.php">Good reference to HTML events</a><br>
+
+<body onKeyDown-="{
+	let myArrowKey = event.keyCode
+	let myAlphaKey = event.key
+	
+	 if (myArrowKey == 37) {
+	    document.getElementById('mySpan01').innerHTML = 'Hi from onKeyDown left arrow pressed'
+	 }
+	
+	 if (myAlphakey == 'd') {
+	    document.getElementById('mySpan01').innerHTML = 'Hi from onKeyDown d arrow pressed'
+	 }
+}">
+  
+Traditional onclick event: <input type=button value="onlclick event" onclick="{
+  // alert('Hi from onclick');
+   document.getElementById('mySpan01').innerHTML = 'Hi from onclick'
+}"> <br><br>
+
+This is <b> bold </b> this isn't<br>
+This is <b onMouseOver="{
+   document.getElementById('mySpan01').innerHTML = 'Hi from onMouseOver'
+}"> bold and onMouseOver </b> this isn't<br><br>
+
+old and onMouseOver </b> this isn't<br>
+</body>
