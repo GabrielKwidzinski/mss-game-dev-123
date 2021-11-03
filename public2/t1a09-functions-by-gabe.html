@@ -1,0 +1,37 @@
+<script>
+  
+function myExampleFunction(){
+   let myIn01 = parseInt(document.getElementById('myText01').value)
+   let mySum = myIn01 + myIn01
+   let myReply = myIn01 + ' + ' + myIn01 + ' = ' + mySum
+   return myReply
+ 
+}
+  
+</script>
+
+Version 0.0.1
+
+<h1 align=center> t1a09-functions-by-gabe.html </h1>
+
+<a href="https://www.w3schools.com/js/js_funcrions.asp">
+Good reference to Javascript functions</a><br>
+
+<script>
+function myBasicFun(){
+   document.getElementById('mySpan01').innerHTML = "wow"
+}
+function myAdvancedFun(x,y){
+      return x*y
+}
+</script>
+
+<input id="myText01" type=text value=3 ><br><br>
+<input type=button value="Run function" onclick="{
+   //alert('button works')
+   myBasicFun()
+}"><br><br>
+<input type=button value="Advanced" onclick="{
+      document.getElementById('mySpan01').innerHTML = myAdvancedFun(3,2)
+}"><br><br>
+<span id="mySpan01" >...</Span><br><br>
